@@ -1,0 +1,39 @@
+Host mscott-central
+    HostName 192.168.4.10
+    User datemike
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host goldenface
+    HostName 192.168.4.11
+    User mrfox
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host camille-afp
+    HostName 192.168.4.12
+    User fileman
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host speed-and-power
+    HostName 192.168.4.13
+    User jc
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host grafana
+    HostName 192.168.4.14
+    User igor
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host raspberry-pi-sensor
+    HostName 192.168.4.15
+    User pi
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host jellybean
+    HostName 192.168.4.16
+    User root
+    IdentityFile ~/.ssh/jumphost_ed25519
+
+Host minikube-ubuntu
+    HostName 192.168.4.17
+    User koober
+    IdentityFile ~/.ssh/jumphost_ed25519
