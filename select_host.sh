@@ -5,7 +5,7 @@ if [[ -z "$SSH_TTY" ]]; then
     exit 0
 fi
 
-HOST=$(grep "Host " ~/.ssh/config | awk '{print $2}' | fzf --prompt="Select server: ")
+HOST=$(awk '$1=="Host" && $2!="*" {print $2}' ~/.ssh/config | fzf --prompt="Select server: ")
 
 if [ -n "$HOST" ]; then
     ssh "$HOST"
